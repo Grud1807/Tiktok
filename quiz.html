@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Квиз по теме TikTok</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="background-glow glow-3"></div>
+  <div class="background-glow glow-4"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>TikTok / Массовая культура</span>
+      </a>
+      <nav class="nav">
+        <a href="influence.html">Влияние</a>
+        <a href="psychology.html">Психология</a>
+        <a class="active" href="quiz.html">Квиз</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-intro">
+      <div class="container narrow">
+        <span class="eyebrow">Раздел 3</span>
+        <h1>Насколько сильным может быть влияние короткого контента</h1>
+        <p class="lead">Ответь на несколько вопросов и посмотри итоговую интерпретацию результата.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="quiz-layout">
+          <form class="quiz-card reveal-on-scroll" id="quizForm">
+            <div class="quiz-question">
+              <h3>1. Как часто подростки повторяют тренды из TikTok в обычной жизни?</h3>
+              <label><input type="radio" name="q1" value="3"> Очень часто: тренды быстро переходят в речь, стиль и поведение</label>
+              <label><input type="radio" name="q1" value="2"> Иногда, если тренд становится массовым</label>
+              <label><input type="radio" name="q1" value="1"> Редко, влияние почти незаметно</label>
+            </div>
+
+            <div class="quiz-question">
+              <h3>2. Почему короткие видео так сильно удерживают внимание?</h3>
+              <label><input type="radio" name="q2" value="3"> Из-за быстрой смены контента, яркости и постоянной новизны</label>
+              <label><input type="radio" name="q2" value="2"> Только из-за музыки и эффектов</label>
+              <label><input type="radio" name="q2" value="1"> Потому что видео просто короткие, и всё</label>
+            </div>
+
+            <div class="quiz-question">
+              <h3>3. Что TikTok может менять сильнее всего?</h3>
+              <label><input type="radio" name="q3" value="3"> Ценности, самооценку, язык общения и повседневные привычки</label>
+              <label><input type="radio" name="q3" value="2"> Только вкус в музыке</label>
+              <label><input type="radio" name="q3" value="1"> Почти ничего, кроме развлечения</label>
+            </div>
+
+            <div class="quiz-question">
+              <h3>4. Какой вывод точнее всего отражает роль TikTok в массовой культуре?</h3>
+              <label><input type="radio" name="q4" value="3"> Он и отражает массовую культуру, и одновременно формирует её</label>
+              <label><input type="radio" name="q4" value="2"> Он просто копирует уже существующие тренды</label>
+              <label><input type="radio" name="q4" value="1"> Это обычная площадка без серьёзного влияния</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary quiz-submit">Показать результат</button>
+          </form>
+
+          <aside class="result-card reveal-on-scroll" id="quizResult">
+            <span class="eyebrow">Результат</span>
+            <h2>Здесь появится итог</h2>
+            <p>После прохождения квиза откроется интерпретация результата.</p>
+            <div class="result-meter">
+              <div class="result-meter-fill" id="resultMeterFill"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container two-col">
+        <div class="panel reveal-on-scroll">
+          <span class="eyebrow">Финальное наблюдение</span>
+          <h2>Почему тема остаётся актуальной</h2>
+          <p>TikTok стал одной из самых заметных площадок, через которую массовая культура очень быстро влияет на подростковую среду: от лексики и моды до отношения к себе и представлений об успехе.</p>
+        </div>
+        <div class="panel reveal-on-scroll">
+          <span class="eyebrow">Смысл вывода</span>
+          <h2>Главное — не игнорировать силу цифровой среды</h2>
+          <p>Влияние платформы нельзя сводить только к развлечению. Она задаёт ритм, язык и образцы поведения, которые постепенно переходят в повседневную жизнь.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Сайт завершён: можно использовать как полноценный интерактивный продукт.</p>
+      <a href="index.html">На главную</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
